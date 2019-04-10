@@ -1,6 +1,17 @@
 
 import { NativeModules } from 'react-native';
 
-const { RNRnKeepScreenOn } = NativeModules;
+const { RNKeepScreenOn } = NativeModules;
 
-export default RNRnKeepScreenOn;
+
+class KeepScreenOn  {
+
+    static activate = (shouldDisplayOnLockScreen = false) => {
+        RNKeepScreenOn.activate(shouldDisplayOnLockScreen)
+    }
+
+    static deactivate = () => {
+        RNKeepScreenOn.deactivate()
+    }
+}
+export default KeepScreenOn;

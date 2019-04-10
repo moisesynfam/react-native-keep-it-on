@@ -1,6 +1,5 @@
-
 {
-  "name": "react-native-rn-keep-screen-on",
+  "name": "react-native-keep-screen-on",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -15,6 +14,5 @@
   "peerDependencies": {
     "react-native": "^0.41.2",
     "react-native-windows": "0.41.0-rc.1"
-
   }
 }
