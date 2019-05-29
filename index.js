@@ -7,10 +7,12 @@ const { RNKeepScreenOn } = NativeModules;
 class KeepScreenOn  {
 
     static activate = (shouldDisplayOnLockScreen = false) => {
+        if(Platform.OS === 'ios') return false; 
         RNKeepScreenOn.activate(shouldDisplayOnLockScreen)
     }
 
     static deactivate = () => {
+        if(Platform.OS === 'ios') return false; 
         RNKeepScreenOn.deactivate()
     }
 
