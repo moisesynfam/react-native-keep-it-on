@@ -1,5 +1,5 @@
 
-package com.reactlibrary;
+package com.moises.keepscreenon;
 
 import android.app.Activity;
 import android.content.Context;
